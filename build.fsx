@@ -10,7 +10,7 @@
 // Git configuration (used for publishing documentation in gh-pages branch)
 // The profile where the project is posted
 let gitOwner = "mavnn"
-let gitHome = "https://github.com/" + gitOwner
+let gitHome = "git@github.com:" + gitOwner
 // The name of the project on GitHub
 let gitProjectName = "FromTheIvoryTower"
 
@@ -129,7 +129,7 @@ Target "GenerateSlides" (fun _ ->
 
 Target "KeepRunning" (fun _ ->
     use watcher = !! (slidesDir + "/**/*.*") |> WatchChanges handleWatcherEvents
-    
+
     startWebServer ()
 
     traceImportant "Waiting for slide edits. Press any key to stop."

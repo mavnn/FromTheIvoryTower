@@ -2,7 +2,7 @@
 - title : From The Ivory Tower
 - description : Solving real world problems with unusual language features
 - author : Michael Newton
-- theme : Sky
+- theme : sky
 - transition : slide
 
 ***
