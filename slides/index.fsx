@@ -17,18 +17,6 @@
 
 ***
 
-### Who is this guy?
-
-Michael Newton
-
-[@mavnn ltd](http://mavnn.co.uk)
-
-[blog](http://blog.mavnn.co.uk)
-
-![swirl](images/swirl.png)
-
-***
-
 ## Active Patterns
 
 ---
@@ -37,7 +25,7 @@ Michael Newton
 
 Liberally stolen from [this gist](https://gist.github.com/kjnilsson/a56040cdd32fd686ffd1).
 
-Thanks [Karl](https://twitter.com/kjnilsson)!
+Thanks [Karl Nilsson](https://twitter.com/kjnilsson)!
 
 *)
 
@@ -142,10 +130,10 @@ let tryGetPort hostName config =
 
 ### Partitioning existing data
 
-F# Quotations are represent the AST of a piece of F# code; nodes in the tree
+F# Quotations represent the AST of a piece of F# code; nodes in the tree
 [can be one of 38 cases](https://github.com/fsharp/fsharp/blob/master/src/fsharp/FSharp.Core/quotations.fs#L157)
 
-Let's say we want to transform ``if`` statements and leave carry everything else though unchanged
+Let's say we want to transform ``if`` statements and carry everything else through unchanged
 
 That's 38 lines of code, or...
 
@@ -460,9 +448,21 @@ let (|StringToPerson|_|) str =
 
 # Thanks
 
+### Michael Newton ([@mavnn](http://twitter.com/mavnn))
+
+<img width="15%" src="images/swirl.png" />
+
 More at http://blog.mavnn.co.uk
 
 Training and consultancy through http://mavnn.co.uk
+
+<script type="text/javascript">
+  (function() {
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+  })();
+</script>
 
 *)
 
